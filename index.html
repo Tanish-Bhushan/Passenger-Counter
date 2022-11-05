@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Passenger Counter</title>
 </head>
 
 <body>
@@ -14,8 +17,20 @@
     <div class="box">
         <h1>Passenger Counter</h1>
         <h1 id="entry">0</h1>
-        <button id="entry-btn" onclick="increment()">+</button> <button id="save-btn" onclick="save()">Save</button>
-        <h4 id="save">Previous Enteries : </h4>
+        <div>
+            <button id="entry-btn" onclick="increment()">Entry</button> <button id="exit-btn"
+                onclick="decrement()">Exit</button>
+            <button id="save-btn" onclick="save()">Save</button> <button id="reload-btn" onclick="reload()">Reset
+                &#8634;</button>
+        </div>
+        <h4 id="save">Previous Entries : </h4>
+    </div>
+    <div class="text">
+        <h5>Use Exit Button to decrement number of passengers.</h5>
+        <h5>Use Entry Button to increment number of passengers.</h5>
+        <h5>Use Save Button to save number of passengers.</h5>
+        <h5>Use Reset Button to clear all entries number of passengers.</h5>
+        <h5>Previous entries show previously entered entries.</h5>
     </div>
     <script src="index.js">innertext</script>
 </body>
