@@ -2,7 +2,7 @@ body {
   text-align: center;
   height: 100vh;
   background-image: url(bg.jpg);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: pacifico;
 }
 
 .box {
@@ -10,7 +10,7 @@ body {
   margin: auto;
   border: 3px solid black;
   border-radius: 10px;
-  background-color: rgb(143, 199, 248);
+  background-color: rgba(143, 199, 248, 0.575);
 }
 
 button {
@@ -19,11 +19,15 @@ button {
   transition: 1ms;
   width: 100px;
   height: 30px;
-  font-weight: bold;
+  font-family: pacifico;
+  margin: auto;
+  padding: auto;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #entry-btn {
-  background-color: rgb(240, 71, 71);
+  background-color: rgb(97, 251, 115);
   transition: background-color 1s;
 }
 
@@ -31,11 +35,37 @@ button {
   background-color: beige;
 }
 
+#exit-btn {
+  background-color: rgb(240, 71, 71);
+  transition: background-color 1s;
+}
+
+#exit-btn:hover {
+  background-color: beige;
+}
+
 #save-btn {
-  background-color: rgb(97, 251, 115);
+  background-color: aqua;
   transition: background-color 1s;
 }
 
 #save-btn:hover {
   background-color: beige;
+}
+
+#reload-btn {
+  background-color: rgb(255, 238, 0);
+  transition: background-color 1s;
+}
+
+#reload-btn:hover {
+  background-color: beige;
+}
+.text{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(254, 254, 254, 0.534);
+  font-weight: lighter;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
 }
